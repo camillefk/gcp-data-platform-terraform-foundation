@@ -1,0 +1,40 @@
+# Local .terraform directories and plugins
+**/.terraform/*
+.terraform.lock.hcl
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+*.tfstate.lock.info
+
+# Crash log files
+crash.log
+crash.*.log
+
+*.tfvars
+*.tfvars.json
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# GCP / Security credentials
+*.json
+*.pem
+*.pkcs8
+.gcloud/
+gcloud-credentials*
+
+# Environment Variables
+.env
+.env.local
+
+# OS / Editor temporary files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
