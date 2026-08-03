@@ -30,12 +30,12 @@ jobs:
       - name: Terraform Init (Local State for Validation)
         id: init
         run: terraform init -backend=false
-        working-directory: environment/dev
+        working-directory: environments/dev
       
       - name: Terraform Validate
         id: validate
         run: terraform validate
-        working-directory: environment/dev
+        working-directory: environments/dev
 
       - name: tfsec Security Scanner
         uses: aquasecurity/tfsec-action@v1.0.3
