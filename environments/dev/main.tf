@@ -33,9 +33,9 @@ module "data_warehouse" {
 }
 
 module "security_iam" {
-  source = "../../modules/iam"
-  GCP_PROJECT_ID = var.GCP_PROJECT_ID
-  environment = "dev"
+  source           = "../../modules/iam"
+  GCP_PROJECT_ID   = var.GCP_PROJECT_ID
+  environment      = "dev"
   GCP_BUCKET_NAMES = module.data_lake.GCP_BUCKET_NAMES
-  GCP_DATASET_IDS = module.data_warehouse.GCP_DATASET_IDS
+  GCP_DATASET_IDS  = module.data_warehouse.GCP_DATASET_IDS
 }

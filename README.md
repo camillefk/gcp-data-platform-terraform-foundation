@@ -65,12 +65,12 @@ terraform apply
 For in-depth architectural decisions, security standards, and operational guidelines, explore the `docs/` directory:
 
 | Document | Description |
-| ----- | ----- |
-| 01. Setup & Installation | Step-by-step prerequisite installation, CLI auth, and GCP project prep. |
-| 02. Data Lake Architecture | GCS Medallion design, lifecycle rules, and storage security enforcement. |
-| 03. Warehouse & IAM Security | BigQuery dataset modeling and least-privilege service account matrix. |
-| 04. State Management & CI/CD | Remote backend configuration, environment isolation, and GitHub Actions pipelines. |
-| 05. Troubleshooting Guide | Detailed debugging workflows and solutions for common deployment errors. |
+| :--- | :--- |
+| **[01. Setup & Installation](docs/01-setup-and-installation.md)** | Step-by-step prerequisite installation, CLI auth, and GCP project prep. |
+| **[02. Warehouse & IAM Security](docs/02-data-warehouse-and-security.md)** | BigQuery dataset modeling and least-privilege service account matrix. |
+| **[03. Backend & Environments](docs/03-backend-and-environmets.md)** | Details the architecture implemented to safeguard Terraform's state files. |
+| **[04. State Management & CI/CD](docs/04-state-and-cicd.md)** | Remote backend configuration, environment isolation, and GitHub Actions pipelines. |
+| **[05. Troubleshooting Guide](docs/05-troubleshooting.md)** | Detailed debugging workflows and solutions for common deployment errors. |
 
 ---
 
@@ -97,4 +97,4 @@ gcloud services enable storage.googleapis.com bigquery.googleapis.com iam.google
 
 **Built by**: @camillefk  
 **Created:** July 2026  
-**Last Updated:** July 16, 2026
+**Last Updated:** August 03, 2026
